@@ -11,6 +11,7 @@ Greetings! Thank you for visiting this repository. I will be attempting LeetCode
 <li>React</li>
 <li>TailwindCSS</li>
 <li>Eslint</li>
+<li>Monaco Editor</li>
 </ul>
 
 > to be continued ....
