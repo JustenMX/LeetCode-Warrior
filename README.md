@@ -12,6 +12,8 @@ Greetings! Thank you for visiting this repository. I will be attempting LeetCode
 <li>TailwindCSS</li>
 <li>Eslint</li>
 <li>Monaco Editor</li>
+<li>React Router</li>
+<li>Daisy UI</li>
 </ul>
 
 > to be continued ....

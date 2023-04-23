@@ -1,5 +1,6 @@
 import React from "react";
 import CodeSnippet from "../../components/CodeSnippets";
+import BackToJsButton from "../../components/BackToJsButton";
 
 function Js2235() {
   const code = `
@@ -25,6 +26,7 @@ function Js2235() {
           <h3 className="font-semibold text-lg my-2">Solution</h3>
         </div>
         <CodeSnippet code={code} />
+        <BackToJsButton />
       </div>
     </div>
   );

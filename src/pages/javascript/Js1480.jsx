@@ -2,34 +2,33 @@ import React from "react";
 import CodeSnippet from "../../components/CodeSnippets";
 import BackToJsButton from "../../components/BackToJsButton";
 
-function Js58() {
+function Js1480() {
   const code = `
-  var lengthOfLastWord = function(s) {
-    var sArr = s.trim().split(' ');
-    if(sArr.length === 0){
-      return 0;
-    }else{
-      return sArr[sArr.length - 1].length;
+  var runningSum = function(nums) {
+    let sums = 0;
+    let retSums = [];
+    for(let i of nums) {
+        sums += i;
+        retSums.push(sums);
     }
-};
+    return retSums;
+}
   `;
 
   return (
     <div className="flex h-screen w-full justify-center items-center">
       <div>
         <h1 className="text-4xl font-bold text-center mb-10">
-          58. Length of Last Word
+          1480. Running Sum of 1d Array
         </h1>
         <div className="ml-50 dark:text-stone-900">
           <h3 className="font-semibold text-lg my-2">Question</h3>
           <div className="mb-5">
             <p>
-              Given a string s consisting of words and spaces, return the length
-              of the last word in the string.
-            </p>
-            <p>
-              A word is a maximal substring consisting of non-space characters
-              only.
+              Given an array nums. We define a running sum of an array as
+              runningSum[i] = sum(nums[0]…nums[i]).
+              <br />
+              Return the running sum of nums..
             </p>
           </div>
           <h3 className="font-semibold text-lg my-2">Solution</h3>
@@ -41,4 +40,4 @@ function Js58() {
   );
 }
 
-export default Js58;
+export default Js1480;

@@ -1,18 +1,31 @@
 // import React from "react";
 import "./main.css";
-import Js58 from "./pages/javascript/JS58";
-import Js2235 from "./pages/javascript/js2235";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import JsIndex from "./pages/JsIndex";
+import Js1 from "./pages/javascript/Js1";
+import Js58 from "./pages/javascript/Js58";
+import Js1480 from "./pages/javascript/Js1480";
+import Js1523 from "./pages/javascript/Js1523";
+import Js2235 from "./pages/javascript/Js2235";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
-    <>
-      <div className="flex h-screen w-full bg-yellow-400 justify-center items-center">
-        <h1 className="text-4xl font-bold text-center">LeetCode Warrior</h1>
-        <img src="/JustenLogo.png" />
-      </div>
-      <Js58 />
-      <Js2235 />
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/JsIndex" element={<JsIndex />} />
+          <Route path="/JsIndex/Js1" element={<Js1 />} />
+          <Route path="/JsIndex/Js58" element={<Js58 />} />
+          <Route path="/JsIndex/Js1480" element={<Js1480 />} />
+          <Route path="/JsIndex/Js1523" element={<Js1523 />} />
+          <Route path="/JsIndex/Js2235" element={<Js2235 />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

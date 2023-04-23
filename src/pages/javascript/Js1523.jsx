@@ -2,15 +2,14 @@ import React from "react";
 import CodeSnippet from "../../components/CodeSnippets";
 import BackToJsButton from "../../components/BackToJsButton";
 
-function Js58() {
+function Js1523() {
   const code = `
-  var lengthOfLastWord = function(s) {
-    var sArr = s.trim().split(' ');
-    if(sArr.length === 0){
-      return 0;
-    }else{
-      return sArr[sArr.length - 1].length;
+  var countOdds = function(low, high) {
+    let count = 0;
+    for (let i = low; i <= high; i++) {
+        (i % 2 != 0) ? (count += 1) : 0; 
     }
+    return count
 };
   `;
 
@@ -18,18 +17,14 @@ function Js58() {
     <div className="flex h-screen w-full justify-center items-center">
       <div>
         <h1 className="text-4xl font-bold text-center mb-10">
-          58. Length of Last Word
+          2235. Add Two Integers
         </h1>
         <div className="ml-50 dark:text-stone-900">
           <h3 className="font-semibold text-lg my-2">Question</h3>
           <div className="mb-5">
             <p>
-              Given a string s consisting of words and spaces, return the length
-              of the last word in the string.
-            </p>
-            <p>
-              A word is a maximal substring consisting of non-space characters
-              only.
+              Given two non-negative integers low and high. Return the count of
+              odd numbers between low and high (inclusive).
             </p>
           </div>
           <h3 className="font-semibold text-lg my-2">Solution</h3>
@@ -41,4 +36,4 @@ function Js58() {
   );
 }
 
-export default Js58;
+export default Js1523;
