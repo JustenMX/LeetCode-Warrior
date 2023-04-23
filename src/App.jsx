@@ -1,6 +1,7 @@
 // import React from "react";
 import "./main.css";
-import PageOne from "./pages/PageOne";
+import Js58 from "./pages/javascript/JS58";
+import Js2235 from "./pages/javascript/js2235";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
         <h1 className="text-4xl font-bold text-center">LeetCode Warrior</h1>
         <img src="/JustenLogo.png" />
       </div>
-      <PageOne />
+      <Js58 />
+      <Js2235 />
     </>
   );
 }

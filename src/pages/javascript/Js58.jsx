@@ -1,10 +1,10 @@
 import React from "react";
-import CodeSnippet from "../components/CodeSnippets";
+import CodeSnippet from "../../components/CodeSnippets";
 
-function PageOne() {
+function Js58() {
   const code = `
-  const lengthOfLastWord = function(s) {
-    const sArr = s.trim().split(' ');
+  var lengthOfLastWord = function(s) {
+    var sArr = s.trim().split(' ');
     if(sArr.length === 0){
       return 0;
     }else{
@@ -19,7 +19,7 @@ function PageOne() {
         <h1 className="text-4xl font-bold text-center mb-10">
           58. Length of Last Word
         </h1>
-        <div className="ml-50 dark:text-teal-100">
+        <div className="ml-50 dark:text-stone-900">
           <h3 className="font-semibold text-lg my-2">Question</h3>
           <div className="mb-5">
             <p>
@@ -39,4 +39,4 @@ function PageOne() {
   );
 }
 
-export default PageOne;
+export default Js58;
