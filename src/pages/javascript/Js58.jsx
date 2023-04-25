@@ -1,5 +1,5 @@
 import React from "react";
-import CodeSnippet from "../../components/CodeSnippets";
+import CodeSnippet from "../../components/CodeSnippet";
 import BackToJsButton from "../../components/BackToJsButton";
 
 function Js58() {
