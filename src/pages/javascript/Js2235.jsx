@@ -10,7 +10,7 @@ function Js2235() {
   `;
 
   return (
-    <div className="flex h-screen w-full justify-center items-center">
+    <div className="flex h-screen w-full justify-center items-center bg-white">
       <div>
         <h1 className="text-4xl font-bold text-center mb-10">
           2235. Add Two Integers

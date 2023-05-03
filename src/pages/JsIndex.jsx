@@ -21,6 +21,12 @@ function JsIndex() {
         <li>
           <Link to={`Js2235`}>Add Two Integers</Link>
         </li>
+        <li>
+          <Link to={`Js2619`}>Array Prototype Last</Link>
+        </li>
+        <li>
+          <Link to={`Js2620`}>Counter</Link>
+        </li>
       </ul>
       <button className="btn btn-primary m-2 mt-10">
         <Link to={`/`}>Home</Link>
